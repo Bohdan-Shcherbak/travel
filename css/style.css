@@ -733,17 +733,51 @@ h2 {
 
 .image-slider {
     padding-top: 30px;
+
 }
 
 .image-slider__image {
     text-align: center;
     max-width: 100%;
     min-width: 100%;
+    position: relative;
 }
 
+.image-slider__image.image-01::before,
+.image-slider__image.image-02::before,
+.image-slider__image.image-03::before {
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    left: 15px;
+    bottom: 40px;
+    width: auto;
+    height: auto;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.image-slider__image.image-01::before {
+    content: 'Spain';
+    text-transform: uppercase;
+}
+
+.image-slider__image.image-02::before {
+    content: 'Japan';
+    text-transform: uppercase;
+}
+
+.image-slider__image.image-03::before {
+    content: 'Usa';
+    text-transform: uppercase;
+}
+
+
 .image-slider__image img {
-    max-width: 100%;
-    min-width: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*Стрелки*/

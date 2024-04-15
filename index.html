@@ -14,11 +14,22 @@
         href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap"
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="../node_modules/swiper/"> -->
-    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="/my_Projects/node_modules/swiper/swiper-bundle.min.css"> -->
+    <!-- <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.css"> -->
+    <!-- <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css"> -->
+    <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper.css">
+    <link rel="stylesheet" href="./node_modules/swiper/modules/pagination.css">
+    <link rel="stylesheet" href="./node_modules/swiper/modules/navigation.css">-->
+    <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css"> -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
 
     <script src="./js/smoothscroll.js"></script>
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <script src="./js/swiper.js"></script> -->
+
 
 </head>
 
@@ -90,17 +101,17 @@
             <div class="image-slider swiper">
                 <div class="image-slider__wrapper swiper-wrapper">
                     <div class="image-slider__slide swiper-slide">
-                        <div class="image-slider__image">
+                        <div class="image-slider__image image-01">
                             <img src="./img/slider/Spain.jpg" alt="1">
                         </div>
                     </div>
                     <div class="image-slider__slide swiper-slide">
-                        <div class="image-slider__image">
+                        <div class="image-slider__image image-02">
                             <img src="./img/slider/Japan.jpg" alt="2">
                         </div>
                     </div>
                     <div class="image-slider__slide swiper-slide">
-                        <div class="image-slider__image">
+                        <div class="image-slider__image image-03">
                             <img src="./img/slider/Usa.jpg" alt="3">
                         </div>
                     </div>
@@ -109,19 +120,21 @@
                 <div class="swiper-button-next"></div>
 
                 <div class="swiper-pagination"></div>
-
+                <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+                <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+                <script src="./js/swiper.js"></script>
             </div>
 
-            <!-- <script src="/my_Projects/node_modules/swiper/swiper-bundle.min.js"></script> -->
 
-            <script src="./js/swiper.js"></script>
+
+
 
 
             <button class="destinations__btn">
                 <img src="./img/slider/arrow-right.svg" width="40" height="40" alt="arrow-right">
                 <span class="destinations__btn--title">Find More</span>
             </button>
-            <script src="./js/swiper.js"></script>
+
         </section>
         <section class="stories">
             <h2 id="stories" class="stories__title">TRAVEL STORIES</h2>
@@ -216,6 +229,7 @@
             </ul>
         </div>
     </footer>
+
     <script src="./js/smoothscroll.min.js"></script>
 </body>
 
