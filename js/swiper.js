@@ -8,7 +8,7 @@
 // import 'swiper/css/pagination';
 // import Swiper from '../../node_modules/swiper/swiper';
 // import Swiper from '../../node_modules/swiper-bundle'
-"use strict"
+// "use strict"
 // import Swiper from '/travel/node_modules';
 // var Swiper = require('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs')
 // import { Pagination, Navigation } from "/travel/node_modules/swiper/swiper.";
@@ -51,10 +51,10 @@ const swiper = new Swiper('.image-slider', {
     // centerInsufficientSlides: true,
     breakpoints: {
         320: {
-            // slidesPerView: 1,
+            slidesPerView: 1,
         },
         768: {
-            // slidesPerView: 1.5,
+            slidesPerView: 1.5,
         },
     },
     // Отступ между слайдами

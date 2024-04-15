@@ -743,6 +743,7 @@ h2 {
     position: relative;
 }
 
+/* 
 .image-slider__image.image-01::before,
 .image-slider__image.image-02::before,
 .image-slider__image.image-03::before {
@@ -770,7 +771,7 @@ h2 {
 .image-slider__image.image-03::before {
     content: 'Usa';
     text-transform: uppercase;
-}
+} */
 
 
 .image-slider__image img {
@@ -786,11 +787,12 @@ h2 {
     display: none;
 }
 
-@media (max-width:768px) {
+@media (min-width:768px) {
 
     .image-slider .swiper-button-next,
     .image-slider .swiper-button-prev {
         display: block;
+        z-index: 100;
 
 
     }
