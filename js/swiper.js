@@ -44,19 +44,24 @@ const swiper = new Swiper('.image-slider', {
     //  автовісота
     // autoHeight:true,
     // autoWidth:true,
-
-
-    // колличество слайдов для показа
-    slidesPerView: 1.5,
-    // centerInsufficientSlides: true,
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 1.5,
-        },
+    parallax: true,
+    effect: "coverflow",
+    coverflowEffect: {
+        // slideShadows: false,
+        depth: 150,
+        modifier: 0.9,
     },
+    // колличество слайдов для показа
+    slidesPerView: 2,
+    // centerInsufficientSlides: true,
+    // breakpoints: {
+    //     320: {
+    //         slidesPerView: 1,
+    //     },
+    //     768: {
+    //         slidesPerView: 2,
+    //     },
+    // },
     // Отступ между слайдами
     spaceBetween: 40,
 
