@@ -39,7 +39,10 @@ const swiper = new Swiper('.image-slider', {
         //  Возможность перетаскивать скролл
         draggable: true,
     },
-
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
 
     //  автовісота
     // autoHeight:true,
@@ -54,14 +57,14 @@ const swiper = new Swiper('.image-slider', {
     // колличество слайдов для показа
     slidesPerView: 2,
     // centerInsufficientSlides: true,
-    // breakpoints: {
-    //     320: {
-    //         slidesPerView: 1,
-    //     },
-    //     768: {
-    //         slidesPerView: 2,
-    //     },
-    // },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        769: {
+            slidesPerView: 2,
+        },
+    },
     // Отступ между слайдами
     spaceBetween: 40,
 
